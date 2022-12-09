@@ -14,31 +14,35 @@ namespace Ejercicio3
             Contrasena = GenerarPassword();
         }
 
-        public bool EsFuerte()
+        public Password (int longitud) : this (string.Empty, longitud)
         {
-            bool mayusculas = false, minusculas = false, numeros = false ;
+        } 
 
-            for (int i = 0; i < contrasena.Length; i++)
-            {
-                if(char.IsUpper (contrasena, i))
-                {
-                    mayusculas = true;
-                }
-                else if(char.IsLower(contrasena, i))
-                {
-                    minusculas = true;
-                }
-                else if(char.IsDigit(contrasena, i))
-                {
-                    numeros = true;
-                }
-            }
-            if(mayusculas && minusculas && numeros)
-            {
-                return true;
-            }
-            return false;
-        }
+        //public bool EsFuerte()
+        //{
+        //    bool mayusculas = false, minusculas = false, numeros = false ;
+
+        //    for (int i = 0; i < contrasena.Length; i++)
+        //    {
+        //        if(char.IsUpper (contrasena, i))
+        //        {
+        //            mayusculas = true;
+        //        }
+        //        else if(char.IsLower(contrasena, i))
+        //        {
+        //            minusculas = true;
+        //        }
+        //        else if(char.IsDigit(contrasena, i))
+        //        {
+        //            numeros = true;
+        //        }
+        //    }
+        //    if(mayusculas && minusculas && numeros)
+        //    {
+        //        return true;
+        //    }
+        //    return false;
+        //}
 
         public string GenerarPassword()
         {
@@ -49,7 +53,15 @@ namespace Ejercicio3
                 int password = random.Next(0, 9);
                 creada += password.ToString();
             }
-            return creada;
+            return creada.ToString();
+        }
+
+        public override string ToString()
+        {
+            StringBuilder builder = new StringBuilder();
+            builder.AppendLine($"Longitud: {longitud}");
+            builder.AppendLine($"Contraseña: {contrasena}");
+            return base.ToString();
         }
     }
 }
