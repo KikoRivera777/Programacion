@@ -55,7 +55,29 @@ namespace Ejercicio4
 
         static void PrecioFinal()
         {
-
+             int precioConsumo = 0, precioPeso = 0;
+            switch (consumo)
+            {
+                case "A":
+                    precioConsumo = 100;
+                    break;
+                case "B":
+                    precioConsumo = 80;
+                    break;
+                case "C":
+                    precioConsumo = 60;
+                    break;
+                case "D":
+                    precioConsumo = 50;
+                    break;
+                case "E":
+                    precioConsumo = 30;
+                    break;
+                case "F":
+                    precioConsumo = 10;
+                    break;
+            }
+            precioBase = precioConsumo;
         }
 
         public override string ToString()
