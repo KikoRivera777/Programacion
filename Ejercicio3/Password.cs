@@ -47,11 +47,14 @@ namespace Ejercicio3
         public string GenerarPassword()
         {
             Random random = new Random();
+            Random random1 = new Random();
             string creada = " ";
             for(int i = 0; i < longitud ; i++)
             {
-                int password = random.Next(0, 9);
-                creada += password.ToString();
+               int numeros = random.Next(0, 9);
+                int letras = random1.Next(65, 122);
+                char letra = Convert.ToChar(letras);
+                creada += numeros.ToString() + letra.ToString();
             }
             return creada.ToString();
         }
@@ -61,6 +64,7 @@ namespace Ejercicio3
             StringBuilder builder = new StringBuilder();
             builder.AppendLine($"Longitud: {longitud}");
             builder.AppendLine($"Contraseña: {contrasena}");
+            builder.AppendLine($"{ EsFuerte()}");
             return base.ToString();
         }
     }
