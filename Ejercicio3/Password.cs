@@ -18,26 +18,26 @@ namespace Ejercicio3
         {
         } 
 
-       public bool EsFuerte()
+               public bool EsFuerte()
         {
-            bool mayusculas = false, minusculas = false, numeros = false;
+            int mayusculas = 0, minusculas = 0, numeros = 0;
 
             for (int i = 0; i < contrasena.Length; i++)
             {
-                if (char.IsUpper(contrasena, 2))
+                if (char.IsUpper(contrasena, i))
                 {
-                    mayusculas = true;
+                    mayusculas++;
                 }
                 else if (char.IsLower(contrasena, 2))
                 {
-                    minusculas = true;
+                    minusculas++;
                 }
                 else if (char.IsDigit(contrasena, 5))
                 {
-                    numeros = true;
+                    numeros++;
                 }
             }
-            if (mayusculas && minusculas && numeros)
+            if (mayusculas > 2 && minusculas > 1 && numeros > 5)
             {
                 return true;
             }
