@@ -18,7 +18,7 @@ namespace Ejercicio3
         {
         } 
 
-               public bool EsFuerte()
+        public bool EsFuerte()
         {
             int mayusculas = 0, minusculas = 0, numeros = 0;
 
