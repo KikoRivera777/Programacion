@@ -18,31 +18,31 @@ namespace Ejercicio3
         {
         } 
 
-        //public bool EsFuerte()
-        //{
-        //    bool mayusculas = false, minusculas = false, numeros = false ;
+       public bool EsFuerte()
+        {
+            bool mayusculas = false, minusculas = false, numeros = false;
 
-        //    for (int i = 0; i < contrasena.Length; i++)
-        //    {
-        //        if(char.IsUpper (contrasena, i))
-        //        {
-        //            mayusculas = true;
-        //        }
-        //        else if(char.IsLower(contrasena, i))
-        //        {
-        //            minusculas = true;
-        //        }
-        //        else if(char.IsDigit(contrasena, i))
-        //        {
-        //            numeros = true;
-        //        }
-        //    }
-        //    if(mayusculas && minusculas && numeros)
-        //    {
-        //        return true;
-        //    }
-        //    return false;
-        //}
+            for (int i = 0; i < contrasena.Length; i++)
+            {
+                if (char.IsUpper(contrasena, 2))
+                {
+                    mayusculas = true;
+                }
+                else if (char.IsLower(contrasena, 2))
+                {
+                    minusculas = true;
+                }
+                else if (char.IsDigit(contrasena, 5))
+                {
+                    numeros = true;
+                }
+            }
+            if (mayusculas && minusculas && numeros)
+            {
+                return true;
+            }
+            return false;
+        }
 
         public string GenerarPassword()
         {
