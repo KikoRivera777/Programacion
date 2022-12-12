@@ -31,7 +31,7 @@ namespace Ejercicio4
         {
         }
 
-        public void ComprobarConsumoEnergetico()
+        public virtual void ComprobarConsumoEnergetico()
         {
             if (consumo == "A") consumo = "A";
             else if (consumo == "B") consumo = "B";
@@ -42,7 +42,7 @@ namespace Ejercicio4
             else consumo = CONSUMO_ENERGETICO;
         }
 
-        public void ComprobarColor()
+        public virtual void ComprobarColor()
         {
             if (color == "blanco") color = COLOR_DEFAULT;
             else if (color == "rojo") color = "rojo";
@@ -53,7 +53,7 @@ namespace Ejercicio4
 
         }
 
-        static void PrecioFinal()
+        static virtual void PrecioFinal()
         {
              int precioConsumo = 0, precioPeso = 0;
             switch (consumo)
@@ -77,7 +77,7 @@ namespace Ejercicio4
                     precioConsumo = 10;
                     break;
             }
-            precioBase = precioConsumo;
+            return precioBase = precioConsumo;
         }
 
         public override string ToString()
