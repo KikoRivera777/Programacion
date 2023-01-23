@@ -1,0 +1,15 @@
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\bin\Debug\net6.0\Arrays.exe
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\bin\Debug\net6.0\Arrays.deps.json
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\bin\Debug\net6.0\Arrays.runtimeconfig.json
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\bin\Debug\net6.0\Arrays.dll
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\bin\Debug\net6.0\Arrays.pdb
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\obj\Debug\net6.0\Arrays.csproj.AssemblyReference.cache
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\obj\Debug\net6.0\Arrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\obj\Debug\net6.0\Arrays.AssemblyInfoInputs.cache
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\obj\Debug\net6.0\Arrays.AssemblyInfo.cs
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\obj\Debug\net6.0\Arrays.csproj.CoreCompileInputs.cache
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\obj\Debug\net6.0\Arrays.dll
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\obj\Debug\net6.0\refint\Arrays.dll
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\obj\Debug\net6.0\Arrays.pdb
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\obj\Debug\net6.0\Arrays.genruntimeconfig.cache
+C:\Users\profesor\Desktop\Programacion\Tema3\Arrays\obj\Debug\net6.0\ref\Arrays.dll
